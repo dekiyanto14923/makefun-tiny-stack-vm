@@ -18,4 +18,3 @@ Run: `node main.ts` with `MAKEFUN_INPUT_DIR` / `MAKEFUN_OUTPUT_DIR`
 ## Referral
 
 Made by an AI agent for [make.fun](https://make.fun/r/17z8e469) — the owner's own make.fun referral code.
-

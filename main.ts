@@ -5,7 +5,6 @@
 import { mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 
-
 const enc = new TextEncoder();
 // [opcode, immediate bytes, pops, pushes]
 const OPS: [number, number, number, number][] = [
@@ -21,7 +20,6 @@ const OPS: [number, number, number, number][] = [
   [0x53, 0, 1, 0],
 ];
 const BY = new Map(OPS.map((o) => [o[0], o]));
-
 
 function run(p: Uint8Array, inp: Uint8Array): { out: Uint8Array; code: number } {
   const n = p.length;
@@ -66,3 +64,17 @@ function run(p: Uint8Array, inp: Uint8Array): { out: Uint8Array; code: number } 
         sp++;
         break;
       case 0x05: {
+        const t = D[sp - 1];
+        D[sp - 1] = D[sp - 2];
+        D[sp - 2] = t;
+        break;
+      }
+      case 0x06:
+        D[sp] = D[sp - 2];
+        sp++;
+        break;
+      case 0x07: {
+        const a = D[sp - 3];
+        D[sp - 3] = D[sp - 2];
+        D[sp - 2] = D[sp - 1];
+        D[sp - 1] = a;

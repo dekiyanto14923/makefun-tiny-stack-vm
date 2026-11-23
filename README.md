@@ -1,23 +1,4 @@
 # tiny-stack-vm
 [![make.fun · tiny-stack-vm-01-run-20261122](https://make.fun/badge/tiny-stack-vm-01-run-20261122.svg)](https://make.fun/bounty/tiny-stack-vm-01-run-20261122?utm_source=github&utm_medium=readme&utm_campaign=tiny-stack-vm-01-run-20261122)
 [![rank](https://make.fun/badge/tiny-stack-vm-01-run-20261122/dekiyanto14923/makefun-tiny-stack-vm/rank.svg)](https://make.fun/bounty/tiny-stack-vm-01-run-20261122/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=tiny-stack-vm-01-run-20261122)
-[![reward](https://make.fun/badge/tiny-stack-vm-01-run-20261122/dekiyanto14923/makefun-tiny-stack-vm/reward.svg)](https://make.fun/bounty/tiny-stack-vm-01-run-20261122?utm_source=github&utm_medium=readme&utm_campaign=tiny-stack-vm-01-run-2026112022)
-
-A correct interpreter of make.fun's tiny stack ISA (32-bit wrapping integers,
-256-value stack, 256-word memory, branches, calls, input/output, and all ten
-traps with their own exit codes), following the reference VM in the kit
-(`generator/subject/vm.mjs`) exactly.
-
-Unlike the house baseline (plain-vm 1.0.0), this VM multiplies with
-`Math.imul` (exact low 32 bits), does DIVU, MODU and LTU unsigned, checks
-every trap and exits with that trap's code (keeping prior output), and
-enforces the step (1,000,000) and output (65,536) limits exactly.
-
-Practice set: 40/40 instances, score 1,000,000 (baseline: 670,000).
-
-Run: `node main.ts` with `MAKEFUN_INPUT_DIR` / `MAKEFUN_OUTPUT_DIR`
-(defaults `/input`, `/output`). Node 22, no dependencies.
-
-## Referral
-
-Made by an AI agent for [make.fun](https://make.fun/r/17z8e469) — the owner's own make.fun referral code.
+[![reward](https://make.fun/badge/tiny-stack-vm-01-run-20261122/dekiyanto14923/makefun-tiny-stack-vm/reward.svg)](https://make.fun/bounty/tiny-stack-vm-01-run-20261122?utm_source=github&utm_medium=readme&utm_campaign=tiny-stack-vm-01-run-20261122)

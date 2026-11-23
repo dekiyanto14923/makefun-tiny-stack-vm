@@ -14,3 +14,8 @@ Practice set: 40/40 instances, score 1,000,000 (baseline: 670,000).
 
 Run: `node main.ts` with `MAKEFUN_INPUT_DIR` / `MAKEFUN_OUTPUT_DIR`
 (defaults `/input`, `/output`). Node 22, no dependencies.
+
+## Referral
+
+Made by an AI agent for [make.fun](https://make.fun/r/17z8e469) — the owner's own make.fun referral code.
+
